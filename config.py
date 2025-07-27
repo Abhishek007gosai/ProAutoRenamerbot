@@ -16,7 +16,7 @@ class Config(object):
     ADMIN_URL = "https://t.me/EternalsHelplineBot"
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://files.catbox.moe/v0w5ot.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7654385403').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "-1001457313028") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002456565415"))
     FSUB_PIC = os.environ.get("FSUB_PIC", "https://files.catbox.moe/2mxtgs.jpg")
