@@ -3,23 +3,23 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
+    API_ID    = os.environ.get("API_ID", "29245477")
+    API_HASH  = os.environ.get("API_HASH", "0abc83883262245c90ca337b7a0375c4")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
     PORT = os.environ.get("PORT", "8080")
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","botskingdom")     
+    DB_NAME = os.environ.get("DB_NAME","cluster0")     
     DB_URL  = os.environ.get("DB_URL","")
  
     # other configs
-    ADMIN_URL = "https://t.me/botskingdoms"
+    ADMIN_URL = "https://t.me/EternalsHelplineBot"
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://ibb.co/DH3N4Lyr")
+    START_PIC   = os.environ.get("START_PIC", "https://files.catbox.moe/v0w5ot.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "https://ibb.co/DH3N4Lyr") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    FSUB_PIC = os.environ.get("FSUB_PIC", "")
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1001457313028") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002456565415"))
+    FSUB_PIC = os.environ.get("FSUB_PIC", "https://files.catbox.moe/2mxtgs.jpg")
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
